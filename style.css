@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(img/home-1.jpg);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.title {
+    padding: 30px 120px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    padding: 20px 120px;
+}
+
+.menu-links {
+    color: white;
+}
+
+.menu-links:hover {
+    text-decoration: underline;
+}
+
+.super {
+   padding: 160px 100px;
+}
