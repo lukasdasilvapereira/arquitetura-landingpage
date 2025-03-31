@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
     background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
+    overflow-y: hidden;
 }
 
 .navbar {
@@ -62,5 +63,46 @@ body {
 }
 
 .super {
-   padding: 160px 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    margin: auto;
+    padding: 90px 120px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 10px;
+}
+
+.container h3 {
+    font-size: 1.7em;
+    color: white;
+}
+
+.main {
+    color: white;
+    font-size: 4em;
+    max-width: 500px;
+}
+
+.dsc {
+    color: white;
+}
+
+.container .brands i {
+    display: flex;
+    justify-content: column;
+    margin: 30px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.contagem p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
 }
