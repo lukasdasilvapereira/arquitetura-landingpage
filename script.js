@@ -1,15 +1,19 @@
 const burger = document.querySelector('.burger');
 const close = document.querySelector('.close');
-const item = document.querySelector('.menu');
+const menu = document.querySelector('.menu');
 
 function abrir() {
-    item.classList.add('ativo'); // Mostra o menu
-    burger.style.display = 'none'; // Esconde o ícone do menu (hambúrguer)
-    close.classList.add('ativo'); // Exibe o botão de fechar (X)
+    menu.classList.add('ativo');
+    close.classList.add('ativo');
+    burger.style.visibility = 'hidden'; // Esconde sem remover espaço
 }
 
-function fechar() {
-    item.classList.remove('ativo'); // Esconde o menu
-    burger.style.display = 'block'; // Volta a exibir o ícone do menu (hambúrguer)
-    close.classList.remove('ativo'); // Esconde o botão de fechar (X)
+function lose() {
+    menu.classList.remove('ativo');
+    close.classList.remove('ativo');
+
+    // Faz o burger reaparecer corretamente apenas em telas pequenas
+    if (window.innerWidth <= 906) {
+        burger.style.visibility = 'visible';
+    }
 }
