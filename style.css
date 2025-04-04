@@ -182,3 +182,13 @@ body {
     }
     
 }
+
+@media screen and (max-width: 858px) {
+    .brands {
+        display: flex;
+    }
+
+    .main {
+        font-size: 2em;
+    }
+}
