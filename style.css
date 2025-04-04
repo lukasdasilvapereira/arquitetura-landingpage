@@ -183,7 +183,7 @@ body {
     
 }
 
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 886px) {
     .brands {
         display: flex;
     }
@@ -191,4 +191,26 @@ body {
     .main {
         font-size: 2em;
     }
+
+    .burger {
+        padding: 30px 120px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+   .burger {
+        padding: 20px 90px;
+   }
+
+   .arrow a {
+       font-size: 0.7em;
+   }
+
+   .contagem p {
+        font-size: 2em;
+   }
+
+   .container h3 {
+    font-size: 0.8em;
+   }
 }
